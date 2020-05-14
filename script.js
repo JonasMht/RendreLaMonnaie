@@ -62,6 +62,9 @@ for (let j = 0; j < elementsMonnaie.length; j++) {
       var val = Number.parseFloat(element.textContent);
       sommeRecup += val;
       eleRecup.innerHTML = Number(sommeRecup.toFixed(1));
+
+      eleStatut.innerHTML = "En cours de traitement."
+      eleStatut.style.color = "blue";
     }
   });
 }
