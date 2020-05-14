@@ -1,0 +1,85 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+html{
+  font-family: monospace;
+  font-size: 150%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title{
+  font-size: 200%;
+  text-align: center;
+}
+button{
+  background-color: #36929e;
+  color: #a6fff5;
+  font-size: 80%;
+  padding: 20px;
+  margin: 10px;
+  border-color: black;
+  outline:0;
+}
+
+button:hover{
+  background-color: #2672a6;
+}
+
+#Caisse{
+  display: none;
+  position: relative;
+  text-align: center;
+  background-color: #355566;
+
+  padding: 0px;
+  margin: 0px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+
+
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.note{
+  width: 150px;
+  height: 80px;
+}
+.coin{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+footer{
+  margin: 15%;
+  font-size: 100%;
+  text-align: center;
+}
+
+/*Type portable*/
+@media only screen and (max-width: 600px) {
+  #Caisse{
+    width: 66%;
+  }
+  .title{
+    width: 66%;
+  }
+}

@@ -1,0 +1,50 @@
+<!-- Rendre la Monnaie -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Monnaie | Jonas Mehtali L1S2</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="title">Rendre la Monnaie</div> <!-- Titre -->
+
+    <button id="ChangerClient" type="button">Servir le prochain client</button><!-- Bouton pour passer au client suivant -->
+    <!-- Statistiques -->
+    <p>Client: <span id="NombreClients" class="stats"></span> Raté: <span id="Erreurs" class="stats"></span></p> <!-- Identifiant du client ainsi que le nombre de fois qu'un rendu était faux -->
+
+    <p>Total dû: <span id="Total" class="stats"></span></p> <!-- Le total à payer par le client -->
+
+    <p>Payé: <span id="MontantRemis" class="stats"></span></p> <!-- Montant remis par le client -->
+
+    <p>Statut: <span id="StatutTransaction" class="stats"></span></p><!-- Statut de la transaction -->
+
+
+    <button id="BtnCaisse" type="button">Ouvrir le tiroir caisse</button> <!-- Bouton pour ouvrir/fermer le tirroir -->
+    <div id="Caisse">
+      <div class="flexContainer">
+         <!-- La monnaie représentée par des boutons -->
+        <button id="Twenty" class="note monnaie">20</button>
+        <button id="Ten" class="note monnaie">10</button>
+        <button id="Five" class="note monnaie">5</button>
+        <button id="Two" class="coin monnaie">2</button>
+        <button id="One" class="coin monnaie">1</button>
+        <button id="DotFive" class="coin monnaie">0.5</button>
+        <button id="DotTwo" class="coin monnaie">0.2</button>
+        <button id="DotOne" class="coin monnaie">0.1</button>
+      </div>
+
+      <p>Monnaie: <span id="MonnaieRecup" class="stats">0</span></p> <!-- Monnaie deja récupéreé de la caisse -->
+
+      <button id="BtnRendre" type="button">Rendre la monnaie</button> <!-- Remettre au client la totalité de la monnaie récuérée de la caisse -->
+    </div>
+
+    <footer> <!-- Pied de page -->
+    <p>Projet "Rendre la Monnaie" - 13/05/2020</p>
+    <p>Jonas Mehtali - L1S2 CMI Informatique - N° 21909082</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
