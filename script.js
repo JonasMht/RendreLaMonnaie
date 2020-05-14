@@ -1,4 +1,4 @@
-/// Partie ecouteurs d'evenements ///
+/// Ecouteur d'evenement pour l'ouverture de la caisse///
 
 var caisseEstOuverte = false;
 var caisse = document.getElementById("Caisse");
@@ -33,7 +33,7 @@ function alea(min,max)
   return brouzoufs+cents;
 }
 
-
+// Variables globales //
 var eleTotal = document.getElementById("Total");
 var eleRemis = document.getElementById("MontantRemis");
 var eleStatut = document.getElementById("StatutTransaction");
@@ -51,9 +51,9 @@ var sommeRecup;
 var nbClients = 0;
 var nbEcheques = 0;
 
-
 var service_en_cours;
 
+// Ecouteurs d'evenements pour chaque piece et billet//
 for (let j = 0; j < elementsMonnaie.length; j++) {
   let element = elementsMonnaie[j];
   element.addEventListener('click', function() {
@@ -68,7 +68,7 @@ for (let j = 0; j < elementsMonnaie.length; j++) {
     }
   });
 }
-
+// Ecouteur d'evenement pour le bouton de rendu de monnaie //
 eleBtnRendre.addEventListener('click', function() {
   if (service_en_cours)
   {
@@ -97,6 +97,7 @@ eleBtnRendre.addEventListener('click', function() {
   }
 });
 
+// Ecouteur d'evenement pour le bouton qui change de client//
 eleBtnChanger.addEventListener('click', function() {
   if (!service_en_cours)
   {
@@ -104,6 +105,7 @@ eleBtnChanger.addEventListener('click', function() {
   }
 });
 
+// Fonction d'innitialisation du client //
 function init()
 {
   service_en_cours = true;
@@ -129,13 +131,13 @@ function init()
   //eleBtnChanger.style = ""; //Pour revenir au style initial
 
   etatCaisse(false)
-
 }
 
+// première innitialisation //
 init();
 
 /*
-Cours Javascript 2
+Cours Javascript (notes personnelles)
 //Un objet
 //Mehtode 1
 var MonObjet =

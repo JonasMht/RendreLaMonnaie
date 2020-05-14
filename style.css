@@ -7,7 +7,7 @@ html, body{
 
 html{
   font-family: monospace;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 body{
@@ -18,13 +18,19 @@ body{
   align-items: center;
 }
 
+p{
+  margin: 10px 0px 10px 0px;
+}
+
 .title{
   font-size: 200%;
   text-align: center;
 }
+
 button{
   background-color: #36929e;
   color: #a6fff5;
+  text-align: center;
   font-size: 80%;
   padding: 20px;
   margin: 10px;
@@ -47,8 +53,6 @@ button:hover{
   border-width: 2px;
   border-color: black;
   border-style: solid;
-
-
 }
 
 .flexContainer{
@@ -59,13 +63,13 @@ button:hover{
 }
 
 .note{
-  width: 150px;
-  height: 80px;
+  width: 140px;
+  height: 70px;
 }
 .coin{
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 footer{
